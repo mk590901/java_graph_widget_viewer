@@ -48,7 +48,7 @@ public class Utils {
         }
 
         int seriesSize =
-            buffer.size() < buffer.capacity() - 1 ? buffer.size() : buffer.capacity();
+            buffer.size() < buffer.capacity() - 1 ? buffer.size() : buffer.capacity() - 1;
         List<Integer> result =
             new ArrayList<>(Collections.nCopies(seriesSize, 0));
         for (int i = 0; i < seriesSize; i++) {
